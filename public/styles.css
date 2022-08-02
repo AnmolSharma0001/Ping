@@ -1,0 +1,96 @@
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+.main_section {
+    width: 70%;
+    /* height: 100%; */
+    margin: 20px auto;
+    border: 5px solid rgb(169, 21, 196);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0.5vh;
+}
+
+/* .mid-in{
+    color:rgb(169, 21, 196);
+    margin-top: 0px;
+    border-bottom: 10px ;
+    
+    
+} */
+
+.brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(169, 21, 196);
+    size: 35px;
+}
+
+.logo {
+    margin: 0px 10px 10px 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    float: left;
+}
+
+.out-message{
+    width: 65%;
+    padding-left: 2vh;
+    background-color: rgb(239, 109, 222);
+    border-radius: 10px;
+    float: right;
+}
+
+.person{
+    float: right;
+    margin-right: 1vh;
+}
+.out-name{
+    float: left;
+    margin-right: 0vh;
+}
+
+.in-name{
+    float: left;
+    margin-right: 1vh;
+    margin-bottom: 0vh;
+}
+
+.in-message{
+    width: 65%;
+    padding-left: 2vh;
+    background-color: rgb(202, 109, 239);
+    border-radius: 10px;
+    float: left;
+}
+
+.message_area{
+    padding-top: 2vh;
+    min-height: 60vh;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.logd{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+
+textarea{
+    resize: none;
+    width: 100%;
+    border-bottom: 3px solid rgb(169, 21, 196);
+    border-radius: 10px;
+}

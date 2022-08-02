@@ -1,0 +1,5 @@
+1. create npm project
+2. create basic files
+3. install dependencies
+4. create express server
+5. frontend
