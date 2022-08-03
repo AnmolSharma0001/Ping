@@ -12,22 +12,22 @@ let m_area = document.getElementsByClassName("message_area");
 tx.addEventListener('keydown', (evt) => {
     if (evt.key === 'Enter') {
         sendMessage(tx.value)
-        tx.value='';
+        tx.value = '';
     }
 })
 
 // Sending
 
 function sendMessage(mssg) {
-    mssg.trim()
-    if(mssg.length != 0){
-        let msg = {
-            user: n,
-            message: mssg.trim()
-        }
-        appendMessage(msg)
-        socket.emit('message', msg)
+    if ((mssg.trim()).length === 0) {
+        return;
     }
+    let msg = {
+        user: n,
+        message: mssg.trim()
+    }
+    appendMessage(msg)
+    socket.emit('message', msg)
 }
 
 function appendMessage(msg) {
@@ -45,10 +45,10 @@ socket.on('message', (msg) => {
     scrollToBottom
 })
 
-function scrollToBottom(){
+function scrollToBottom() {
     messageArea.scrollTop = m_area[0].scrollHeight
 }
 
 function removeTextAreaWhiteSpace() {
-    tx.value = myTxtArea.value.replace(/^\s*|\s*$/g,'');
+    tx.value = myTxtArea.value.replace(/^\s*|\s*$/g, '');
 }
