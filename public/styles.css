@@ -74,8 +74,8 @@ body {
 
 .message_area{
     padding-top: 2vh;
-    min-height: 60vh;
-    overflow-y: auto;
+    height: 60vh;
+    overflow-y: scroll;
     flex-direction: column;
 }
 

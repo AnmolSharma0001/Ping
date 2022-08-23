@@ -34,7 +34,7 @@ function appendMessage(msg) {
     let ndiv = document.createElement("div");
     ndiv.innerHTML = `<p class="out-message"> <h4class="logd">${msg.user} : </h4>${msg.message} </p>`
     m_area[0].appendChild(ndiv)
-    scrollToBottom
+//     scrollToBottom
 }
 
 // Recieving
@@ -42,11 +42,11 @@ socket.on('message', (msg) => {
     let ndiv = document.createElement("div");
     ndiv.innerHTML = `<p class="in-message"> <h4class="logd">${msg.user} : </h4>${msg.message} </p>`
     m_area[0].appendChild(ndiv)
-    scrollToBottom
+    // scrollToBottom
 })
 
 function scrollToBottom() {
-    messageArea.scrollTop = m_area[0].scrollHeight
+    m_area[0].scrollTop = m_area[0].scrollHeight
 }
 
 function removeTextAreaWhiteSpace() {
